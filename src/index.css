@@ -1,13 +1,44 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: 'Nohemi-Bold';
+    src: url('./fonts/Nohemi-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Nohemi-Medium';
+    src: url('./fonts/Nohemi-Medium.ttf') format('truetype');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: 'Nohemi-Light';
+    src: url('./fonts/Nohemi-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Nohemi-Semibold';
+    src: url('./fonts/Nohemi-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Nohemi-Regular';
+    src: url('./fonts/Nohemi-Regular.ttf') format('truetype');
+}
+
+
+body {
+  font-family: "Nohemi", sans-serif;
+  margin: 0;
+  background-color: #1e1e1e;
+}
+
+h1,h2,h3,h4,h5{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+.txt-block{
+    display: block;
+}
+@media only screen and (max-width: 420px) {
+    .txt-block{
+        display: contents;
+    }
 }

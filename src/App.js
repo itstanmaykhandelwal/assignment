@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Banner from './component/Banner';
+import Network from './component/Network';
+import Transition from './component/Transition';
+import WOW from "wow.js";
+import "animate.css";
+import { useEffect } from 'react';
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    useEffect(() => {
+        console.log("WOW effect");
+        new WOW().init();
+    }, []);
+    return (
+        <>
+            <Banner/>
+            <Network/>
+            <Transition/>
+        </>
+    );
 }
 
 export default App;
